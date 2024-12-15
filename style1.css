@@ -1,0 +1,755 @@
+
+/* Estilos para o cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 12%;
+    background-color: rgba(26, 26, 26, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: rgb(255, 137, 255);
+    text-shadow: 0 0 25px orchid, 0 0 5px orchid;
+    transform: scale(1.1);
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 15px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: violet;
+    border-bottom: 3px solid violet;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: rgb(255, 137, 255);
+    text-shadow: 0 0 25px orchid, 0 0 5px orchid;
+    transform: scale(1.1);           
+}
+
+span {
+    color: pink;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens da navbar se ajustem em várias linhas se necessário */
+    justify-content: center; /* Centraliza os itens */
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 15px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: violet;
+    border-bottom: 3px solid violet;
+}
+
+
+/* Estilos para a seção inicial */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 100px 12% 0;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h3 {
+    font-size: 36px;
+    color: #444;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.home-content h1 span {
+    color: violet;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 20px 0 30px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.img-box img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.social-icons { margin-top: 20px; display: flex; gap: 10px;
+ } 
+ .social-icon { color: #333; font-size: 24px; transition: color 0.3s; } .social-icon:hover { color: violet; }
+
+/* Botão de download estilizado */
+.download-btn {
+    display: inline-block;
+    background-color: #ff7db3; /* Rosa bebê */
+    color: #333; /* Texto em contraste */
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px; /* Bordas arredondadas */
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #ff009d; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); 
+    color: #fff;
+}
+
+/* Estilo geral para a seção "Sobre Mim" */
+.sobre {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    padding: 50px 20px;
+    display: flex; /* Exibe lado a lado texto e vídeo */
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sobre-content {
+    flex: 1; /* O texto ocupará metade da seção */
+    padding: 20px;
+}
+
+.sobre-content h2 {
+    color: #ff00aa; /* Rosa destacado */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.sobre-content p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+.contact-btn { background-color: #ff007f; color: white; padding: 10px 20px; border: none; border-radius: 20px; 
+    /* Bordas arredondadas */ cursor: pointer; font-size: 16px; margin-top: 20px; text-decoration: none; display: inline-block; transition: 0.3s ease; }
+
+    .contact-btn:hover {
+        background-color: #ff93d6; 
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05); 
+        color: #fff;
+    }
+    
+
+.video {
+    flex: 1; /* O vídeo ocupará metade da seção */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo geral para a seção de habilidades */
+.habilidades {
+    width: 500px;
+    margin: 60px auto;
+    color: #333; /* Ajuste do texto para contraste */
+    background: #ffffff; /* Fundo claro em tom de rosa suave */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.habilidades li {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.bar {
+    background: rgb(255, 192, 229);
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(255, 153, 204, 0.8) 0%, rgb(255, 105, 180) 100%);
+}
+
+/* Animações das habilidades */
+.html {
+    width: 70%;
+    animation: html 3s;
+}
+
+.css {
+    width: 60%;
+    animation: css 3s;
+}
+
+.softwaredeprodutividade {
+    width: 90%;
+    animation: softwaredeprodutividade 3s;
+}
+
+.artesculinarias {
+    width: 90%;
+    animation: artesculinarias 3s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes softwaredeprodutividade {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes artesculinarias {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+/* Seção Serviços */
+.servicos {
+    padding: 50px 20px;
+    background-color: #000; /* Fundo preto */
+    text-align: center;
+    color: #fff; /* Texto branco */
+}
+
+.servicos h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #ff00aa; /* Cor do título */
+}
+
+.servicos .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.servicos .box {
+    background-color: transparent; /* Fundo transparente */
+    padding: 20px;
+    border: 2px solid #ff00aa; /* Borda rosa */
+    border-radius: 10px;
+    flex: 1;
+    transition: 0.3s ease;
+}
+
+.servicos .box:hover {
+    background-color: #333; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.servicos .box i {
+    font-size: 40px;
+    color: #ff00aa; /* Cor do ícone */
+    margin-bottom: 10px;
+}
+
+.servicos .box h3 {
+    font-size: 24px;
+    color: #ff00aa; /* Cor do título do box */
+    margin-bottom: 10px;
+}
+
+.servicos .box p {
+    font-size: 16px;
+    color: #fff; /* Cor do texto */
+    line-height: 1.5; /* Espaçamento entre as linhas */
+}
+
+
+
+        /* Estilos para a seção de educação */
+.educacao {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Fundo claro */
+    color: #333; /* Texto escuro */
+    text-align: center;
+}
+
+.educacao h1 {
+    font-size: 36px;
+    color: #ff007f; /* Cor do título */
+    margin-bottom: 20px;
+}
+
+.educacao table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Fundo branco */
+}
+
+.educacao th,
+.educacao td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.educacao th {
+    background-color: #ff007f; /* Fundo rosa */
+    color: white; /* Texto branco */
+}
+
+.educacao tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fundo das linhas pares */
+}
+
+/* Seção de experiência */
+.experiencia {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 100px; /* Adiciona espaço abaixo da seção de experiência */
+}
+
+.container-experiencia {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+}
+
+.container-experiencia h2 {
+    font-size: 36px;
+    color: #ff007f;
+    margin-bottom: 30px;
+}
+
+.linha-tempo {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linha-tempo::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #ff007f;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.marco {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ff007f; /* Borda mais fina */
+    box-shadow: 0 4px 8px rgba(197, 186, 186, 0.1);
+    text-align: left;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+    z-index: 2; /* Garantir que o conteúdo fique por cima */
+}
+
+/* Efeito de hover */
+.marco:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efeito extra de sombra no hover */
+}
+
+.marco .icone {
+    position: absolute;
+    top: 20px;
+    left: -35px;
+    background-color: #ff007f;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Ícone maior e mais destacado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+.conteudo h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.conteudo p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Flexbox para alternar entre esquerda e direita sem classes */
+.linha-tempo .marco:nth-child(odd) {
+    align-self: flex-start; /* Alinha à esquerda */
+}
+
+.linha-tempo .marco:nth-child(even) {
+    align-self: flex-end; /* Alinha à direita */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .marco {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .linha-tempo::before {
+        left: 50%;
+        margin-left: -1px;
+    }
+
+    .marco:nth-child(odd),
+    .marco:nth-child(even) {
+        align-self: center;
+    }
+
+    .marco .icone {
+        left: calc(50% - 25px); /* Centraliza o ícone */
+    }
+}
+
+/* Rodapé - Garantir que o rodapé tenha um z-index superior ao da seção de experiência */
+footer {
+    position: relative;
+    z-index: 10;
+    margin-top: 50px; /* Adiciona margem superior no rodapé */
+}
+/* Seção de Projetos */
+.projetos {
+    padding: 50px 20px;
+    background-color: #f8f8f8; /* Fundo claro para contrastar com os projetos */
+    color: #333; /* Texto em cor escura para melhor leitura */
+    text-align: center;
+}
+
+.container-projetos {
+    max-width: 1000px;
+    margin: 50px auto; /* Espaçamento superior e centralização */
+    border: 2px solid #ff007f;
+    border-radius: 5px;
+    padding: px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a seção */
+    background-color: #fff; /* Fundo branco para o container */
+}
+
+.container-projetos h2 {
+    font-size: 36px;
+    color: #ff007f;
+    margin-bottom: 30px;
+    font-weight: 600; /* Mais espessura para destacar o título */
+}
+
+/* Grid de projetos - estrutura flexível */
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Colunas adaptáveis */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Estilos para cada projeto */
+.projeto {
+    position: relative;
+    overflow: hidden;
+    background-color: #000; /* Fundo preto para contraste */
+    border-radius: 10px; /* Bordas arredondadas para suavizar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra discreta para destaque */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1a1a1a; /* Cor de fundo sólida */
+    padding: 10px;
+    border: 1px solid #333; /* Borda discreta ao redor do projeto */
+}
+
+.projeto img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+}
+
+.projeto .descricao {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência para destacar o texto */
+    color: #fff;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    border-top: 1px solid #ff007f; /* Linha de borda superior para separar */
+    border-radius: 0 0 8px 8px; /* Bordas arredondadas no rodapé da descrição */
+}
+
+/* Efeito hover nos projetos */
+.projeto:hover {
+    transform: translateY(-10px); /* Eleva um pouco o projeto ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra maior para destaque */
+}
+
+.projeto:hover img {
+    transform: scale(1.1); /* Zoom na imagem */
+}
+
+.projeto:hover .descricao {
+    transform: translateY(0); /* Exibe a descrição ao passar o mouse */
+}
+
+/* Responsividade - Ajuste de layout em telas menores */
+@media (max-width: 768px) {
+    .grid-projetos {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Colunas mais estreitas em telas menores */
+    }
+
+    .projeto .descricao {
+        padding: 15px; /* Reduz o padding da descrição para telas menores */
+    }
+
+    .container-projetos h2 {
+        font-size: 28px; /* Reduz o tamanho da fonte do título em telas pequenas */
+    }
+}
+
+/* Seção de contato */
+.contato {
+    padding: 50px 20px;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 36px;
+    color: #ff007f; /* Cor do título */
+    margin-bottom: 20px;
+}
+
+.container-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ff007f;
+    border-radius: 15px;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.informacoes-contato {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.informacoes-contato p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.informacoes-contato a {
+    color: #ff93d6;
+    text-decoration: none;
+}
+
+.informacoes-contato a:hover {
+    text-decoration: underline; 
+}
+
+.form-contato {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ff93d6;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ff93d6; /* Borda rosa */
+    border-radius: 5px;
+    background-color: #262626;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999; /* Placeholder cinza claro */
+}
+
+.form-group textarea {
+    height: 100px; /* Altura do textarea */
+    resize: none; /* Desativa a redimensionar */
+}
+
+.form-contato button {
+    width: 100%;
+    background-color: #ff007f; /* Fundo rosa */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.form-contato button:hover {
+    background-color: #ff4da6; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+/* CSS Responsivo */
+@media (max-width: 768px) {
+    .container-contato {
+        padding: 15px;
+    }
+
+    .informacoes-contato {
+        text-align: center;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: calc(100% - 22px); /* Ajusta a largura para telas menores */
+    }
+}
+
+
+/* Rodapé */
+.footer {
+    background-color: rgb(197, 197, 197); /* Fundo cinza escuro */
+    color: rgb(0, 0, 0); /* Texto branco */
+    text-align: center;
+    padding: 4px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
